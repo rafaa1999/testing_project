@@ -38,4 +38,8 @@ class AppService{
     return this.http.get(`https://fakestoreapi.com/products/${id}`)
   }
 
+  addProduct(product:any){
+    return this.http.post(`https://fakestoreapi.com/product`, product)
+     }
+
 }
